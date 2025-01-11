@@ -1,17 +1,17 @@
 export const DASHBOARD_URLS = [
   {
-    id: 'sales',
-    url: 'https://sales-service-portal-bdgillihan.replit.app/embed/dashboard?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTE0MTAxMzYsImlhdCI6MTczNTg1ODEzNiwic3ViIjoiZGFzaGJvYXJkX2VtYmVkIiwidXNlcl9pZCI6MSwiZW1haWwiOiJiZW5naWxsaWhhbkBhbXBvd2Vyc3lzLmNvbSJ9.W8vHe57Wi-WlbQxcS0l9juCzW4HJXgnI3-I4gu6OZZo',
-    title: 'Salesflow'
+    id: 'employees',
+    url: 'https://americanpower.quickbase.com/db/bn8rejh4e/tablereport?a=td',
+    title: 'Employees'
   },
   {
-    id: 'powerbi',
-    url: 'https://app.powerbi.com/reportEmbed?reportId=db4665f9-bb0f-42ef-ac87-a0172e6573fb&autoAuth=true&ctid=4fa2dc50-679e-4e7f-9953-0b4a5c3291be',
-    title: 'Power BI Report'
+    id: 'employee-hub',
+    url: 'https://americanpower.quickbase.com/db/bti8q3r8j/tablereport?a=td',
+    title: 'Employee Hub'
   },
   {
-    id: 'quickbase',
-    url: 'https://americanpower.quickbase.com/db/bp5hq3uqm/813bccff-c7f4-4298-aa2d-aa36e57ea55e',
-    title: 'QuickBase Dashboard'
+    id: 'training',
+    url: 'https://americanpower.quickbase.com/db/bs8fv8nsw/tablereport?a=q&qid=18',
+    title: 'Training to Renew'
   }
 ] as const;
