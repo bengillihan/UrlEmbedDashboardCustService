@@ -27,7 +27,7 @@ export const DASHBOARD_URLS = [
   {
     id: 'personal-reimbursement',
     url: 'https://americanpower.quickbase.com/db/bp9tjru6u/tablereport?a=q&qid=1&skip=0',
-    title: 'Personal Reimbursement'
+    title: 'Reimbursement'
   },
   {
     id: 'battery-xref',
