@@ -18,5 +18,10 @@ export const DASHBOARD_URLS = [
     id: 'checkups',
     url: 'https://americanpower.quickbase.com/db/br9nyjwzz/tablereport?a=q&qid=9',
     title: 'Checkups'
+  },
+  {
+    id: 'directory',
+    url: 'https://americanpower.quickbase.com/db/bpiyihxiv/tablereport?a=td',
+    title: 'Directory'
   }
 ] as const;
