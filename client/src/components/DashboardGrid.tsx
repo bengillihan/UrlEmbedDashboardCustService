@@ -4,13 +4,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function DashboardGrid() {
   return (
-    <Tabs defaultValue={DASHBOARD_URLS[0].id} orientation="vertical" className="flex w-full h-screen">
-      <TabsList className="flex flex-col h-full border-r bg-muted/50 w-36">
+    <Tabs defaultValue={DASHBOARD_URLS[0].id} orientation="vertical" className="flex w-full h-screen overflow-hidden">
+      <TabsList className="flex flex-col h-full border-r bg-muted/50 w-32 shrink-0">
         {DASHBOARD_URLS.map((dashboard) => (
           <TabsTrigger 
             key={dashboard.id} 
             value={dashboard.id} 
-            className="justify-start text-sm px-2 py-2"
+            className="justify-start text-sm px-1.5 py-1.5"
           >
             {dashboard.title}
           </TabsTrigger>
@@ -20,7 +20,7 @@ export function DashboardGrid() {
         <TabsContent 
           key={dashboard.id} 
           value={dashboard.id} 
-          className="flex-1 h-full m-0 p-0"
+          className="flex-1 h-full m-0 p-0 [&_>div]:h-full [&_>div]:w-full"
         >
           <DashboardEmbed 
             url={dashboard.url} 
