@@ -13,5 +13,10 @@ export const DASHBOARD_URLS = [
     id: 'training',
     url: 'https://americanpower.quickbase.com/db/bs8fv8nsw/tablereport?a=q&qid=18',
     title: 'Training to Renew'
+  },
+  {
+    id: 'checkups',
+    url: 'https://americanpower.quickbase.com/db/br9nyjwzz/tablereport?a=q&qid=9',
+    title: 'Checkups'
   }
 ] as const;
