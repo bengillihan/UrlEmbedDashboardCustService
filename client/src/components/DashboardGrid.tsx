@@ -4,32 +4,30 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function DashboardGrid() {
   return (
-    <div className="flex w-full h-screen">
-      <Tabs defaultValue={DASHBOARD_URLS[0].id} orientation="vertical" className="flex w-full">
-        <TabsList className="flex flex-col h-full border-r bg-muted/50 w-40">
-          {DASHBOARD_URLS.map((dashboard) => (
-            <TabsTrigger 
-              key={dashboard.id} 
-              value={dashboard.id} 
-              className="justify-start text-sm px-3 py-2"
-            >
-              {dashboard.title}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+    <Tabs defaultValue={DASHBOARD_URLS[0].id} orientation="vertical" className="flex w-full h-screen">
+      <TabsList className="flex flex-col h-full border-r bg-muted/50 w-36">
         {DASHBOARD_URLS.map((dashboard) => (
-          <TabsContent 
+          <TabsTrigger 
             key={dashboard.id} 
             value={dashboard.id} 
-            className="flex-1 h-full p-0 m-0"
+            className="justify-start text-sm px-2 py-2"
           >
-            <DashboardEmbed 
-              url={dashboard.url} 
-              title={dashboard.title}
-            />
-          </TabsContent>
+            {dashboard.title}
+          </TabsTrigger>
         ))}
-      </Tabs>
-    </div>
+      </TabsList>
+      {DASHBOARD_URLS.map((dashboard) => (
+        <TabsContent 
+          key={dashboard.id} 
+          value={dashboard.id} 
+          className="flex-1 h-full m-0 p-0"
+        >
+          <DashboardEmbed 
+            url={dashboard.url} 
+            title={dashboard.title}
+          />
+        </TabsContent>
+      ))}
+    </Tabs>
   );
 }
