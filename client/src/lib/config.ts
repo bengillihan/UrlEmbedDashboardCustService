@@ -10,11 +10,6 @@ export const DASHBOARD_URLS = [
     title: 'orders@'
   },
   {
-    id: 'directory',
-    url: 'https://americanpower.quickbase.com/db/bpiyihxiv/tablereport?a=td',
-    title: 'Directory'
-  },
-  {
     id: 'purchase-tracker',
     url: 'https://americanpower.quickbase.com/db/bn8ezvb9v/tablereport?a=q&qid=1&skip=0',
     title: 'Purchase Tracker'
@@ -63,5 +58,10 @@ export const DASHBOARD_URLS = [
     id: 'collections',
     url: 'https://americanpower.quickbase.com/db/bn9dt558q/tablereport?a=td',
     title: 'Collections'
+  },
+  {
+    id: 'directory',
+    url: 'https://americanpower.quickbase.com/db/bpiyihxiv/tablereport?a=td',
+    title: 'Directory'
   }
 ] as const;
