@@ -5,6 +5,11 @@ export const DASHBOARD_URLS = [
     title: 'SalesFlow'
   },
   {
+    id: 'orders',
+    url: 'https://americanpower.quickbase.com/db/braapn9dq/tablereport?a=q&qid=5',
+    title: 'orders@'
+  },
+  {
     id: 'purchase-tracker',
     url: 'https://americanpower.quickbase.com/db/bn8ezvb9v/tablereport?a=q&qid=1&skip=0',
     title: 'Purchase Tracker'
