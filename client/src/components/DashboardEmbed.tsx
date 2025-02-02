@@ -37,24 +37,15 @@ export function DashboardEmbed({ url, title }: DashboardEmbedProps) {
 
   if (isSalesFlow) {
     return (
-      <div className="w-full h-full relative">
+      <div className="w-full h-full flex items-center justify-center bg-gray-50">
         <Button 
-          variant="ghost" 
-          size="sm" 
-          className="absolute top-2 right-2 z-10"
+          size="lg"
           onClick={() => window.open(url, '_blank')}
+          className="flex items-center gap-2"
         >
-          <ExternalLink className="h-4 w-4 mr-2" />
-          Open in new tab
+          <ExternalLink className="h-5 w-5" />
+          Open SalesFlow Dashboard
         </Button>
-        <iframe 
-          src={url}
-          title={title}
-          className="w-full h-full border-0"
-          onLoad={handleLoad}
-          onError={handleError}
-          allow="fullscreen"
-        />
       </div>
     );
   }
